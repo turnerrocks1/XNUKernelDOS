@@ -80,6 +80,7 @@ void setup(void) {
         classForConnection(connect, class_name);
         printf("\t[+] classForConnection : %s\n", class_name);
         kernDOS(connect);
+        return;
     }
     next:{
         printf("Couldn't open connection :(");
@@ -93,3 +94,4 @@ int main(void) {
     setup();
     return 0;
 }
+
